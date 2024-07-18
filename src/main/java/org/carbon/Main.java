@@ -14,9 +14,9 @@ public class Main {
     private final GameService gameService;
 
     public static void main(String[] args) {
-        Printer display = new ConsolePrinter();
+        Printer printer = new ConsolePrinter();
         GameService gameController = new GameService();
-        Main main = new Main(display, gameController);
+        Main main = new Main(printer, gameController);
 
         main.run(InitialConfiguration.getBeacon());
     }
